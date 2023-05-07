@@ -296,7 +296,7 @@ nav {
   margin-top: 4rem;
 }
 
-.contact__form form input ,
+.contact__form form input,
 .contact__form form textarea {
   width: 100%;
   font-size: 13px;
@@ -304,10 +304,10 @@ nav {
   border-radius: 0.5rem;
   border: none;
   outline: none;
-  margin-bottom: 12px;    
+  margin-bottom: 12px;
 }
 
-.contact__form form input::placeholder ,
+.contact__form form input::placeholder,
 .contact__form form textarea::placeholder {
   color: var(--second-color);
   letter-spacing: 1px;
@@ -379,7 +379,7 @@ nav {
     transition: all 0.5s ease;
     z-index: 999;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
-  }  
+  }
   .menu.active {
     right: 0;
   }
@@ -391,17 +391,115 @@ nav {
   .toggle {
     width: 40px;
     height: 40px;
-    background: url('https://www.mindbreeze.com/sites/default/files/imagepicker/981/code10.png');
+    background: url("../images/menu.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
     cursor: pointer;
   }
   .toggle.active {
-    background: url('https://www.mindbreeze.com/sites/default/files/imagepicker/981/code10.png');
+    background: url("../images/close.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 25px;
     cursor: pointer;
   }
+  section {
+    padding: 80px;
+  }
+  .home__text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.8rem;
+    line-height: 4rem;
+  }
+  .home__img {
+    width: 400px;
+    height: 400px;
+  }
+  .social {
+    left: 110px;
+  }
+  .heading h2 {
+    font-size: 1.6rem;
+  }
+  .about__img {
+    width: 250px;
+    height: 400px;
+  }
+  .about__text ,
+  .work__text{
+    width: 400px;
+  }
+  .about__text h2 {
+    font-size: 1.3rem;
+  }
+  .about__text p,
+  .work__text p {
+    line-height: 1.5rem;
+  }
+  .work__img {
+    width: 250px;
+    height: 300px;
+  }
 }
+
+@media (max-width: 871px) {
+  section {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  section {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 460px) {
+  section {
+    padding: 35px;
+  }
+  .home {
+    flex-direction: column;
+  }
+  .home__text {
+    max-width: 400px;
+    margin-top: 2rem;
+  }
+  .home__img {
+    width: 345px;
+    height: 400px;
+  }
+  .home__text h1 {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+    line-height: 3rem;
+  }
+  .about__content ,
+  .work__content {
+    flex-direction: column;
+  }
+  .about__text ,
+  .work__text {
+    max-width: 280px;
+  }
+  .work__text h3 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .work__img {
+    height: 200px;
+    height: 280px;
+    margin-top: 4rem;
+  }
+  .contact__content {
+    flex-direction: column;
+  }
+  .app {
+    margin-top: 4rem;
+  }
+  .contact__form {
+    width: 300px;
+  }
+}
+
